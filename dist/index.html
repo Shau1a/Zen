@@ -7,16 +7,16 @@
 	<!-- Стили -->
 
 	<link rel="stylesheet" href="css/style.css">
-	
+
 	<!-- Шрифты -->
 
-	<link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 	<link rel="shortcut icon" href="img/ken.ico" type="image/x-icon">
 </head>
 <body>
-	<div class="bg-image">
+<div class="bg-image">
 
 	<div class="main_container">
 		<div class="menu">
@@ -29,12 +29,12 @@
 				<li class="menu_stop"><a href="#">stop / стоп</a></li>
 				<li class="menu_start"><a href="#">start / старт</a></li>
 				<li class="menu_restart"><a href="#">New game / <br> начать сначала</a></li>
+				<li class="sign">by Ekaterina Luhakova</li>
 			</ul>
-			<div class="sign">by Ekaterina Luhakova</div>
 		</div>
 		<div id="game_wrapper">
 			<div class="canvas-wrapper">
-			  <canvas id="canvas"></canvas>
+				<canvas id="canvas"></canvas>
 			</div>
 		</div>
 		<div class="forismatic">
@@ -47,17 +47,17 @@
 		</div>
 	</div>
 
-    <div class="modal-overlay modal_closed" id="modal-default">
-	    <div class="modal overlay-default">
-	        <header class="modal__header">
-	           <a href="#" class="modal__close close" id="modal-close" title="Закрыть модальное окно"><i class="far fa-times-circle" id="modal-close"></i></a>
-	        </header>
-	        <div data-info='content' class="content"></div>
-	    </div>
-    </div>
-
+	<div class="modal-overlay modal_closed" id="modal-default">
+		<div class="modal overlay-default">
+			<header class="modal__header">
+				<a href="#" class="modal__close close" id="modal-close" title="Закрыть модальное окно"><i class="far fa-times-circle" id="modal-close"></i></a>
+			</header>
+			<div data-info='content' class="content"></div>
+		</div>
 	</div>
-	
+
+</div>
+
 <script src="js/audio.js"></script>
 <script src="js/game.js"></script>
 <script src="js/quots.js"></script>

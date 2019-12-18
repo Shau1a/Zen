@@ -105,21 +105,21 @@ let countAngle = function(x, y) {
       angle = 180 - angle;
   }
   return angle;
-}
+};
 
 // Создание буфера для отрисовки элементов
 // 
 let makeBuffer = function() {
   let buffer = document.createElement('canvas').getContext('2d');
   return buffer;
-}
+};
   
 let clear = function() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
   ctx.beginPath();
   ctx.fillStyle = 'rgba(255,255,255,.97)';
   ctx.fillRect(0,0,canvas.width,canvas.height);
-}
+};
 
 let getRandomColor = function() {
   let r = function () { 
@@ -128,7 +128,7 @@ let getRandomColor = function() {
   let a = Math.random().toFixed(2);
   a >= 0.22 ? a = a : a = 0.22;
   return `rgba(${r()}, ${r()}, ${r()}, ${a})`;
-}
+};
 
 let getData = function() {
   if (window.localStorage.getItem('ZenGameScores')) {
@@ -139,13 +139,13 @@ let getData = function() {
   else {
       return 0;
   }
-}
+};
 
 let saveData = function(score) {
   let ZenGameScores = {};
   ZenGameScores['score'] = score;
   window.localStorage.setItem('ZenGameScores', JSON.stringify(ZenGameScores));
-}
+};
 
 
 //=============================================//
@@ -693,7 +693,7 @@ let game = {
     let res = getData();
     if (game.score > res) {
       saveData(game.score);
-    };
+    }
 
     setTimeout(function() {
       setContent(complexityChoise);
